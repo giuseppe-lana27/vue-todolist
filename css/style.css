@@ -3,36 +3,59 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background: #ffebcd;
+}
+/* titolo */
 .title{
   text-align: center;
   margin-top: 20px;
 }
+.title h1{
+  display: inline-block;
+}
+.spesa-img{
+  height: 80px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+/* lista della spesa */
 #todo-list{
   max-width: 800px;
   margin: auto;
   padding: 40px;
   font-size: 25px;
 }
+ul{
+  list-style-type: upper-roman;
+}
  ul li{
   margin: 10px 10px;
   padding: 20px;
  }
  span{
-   cursor: pointer;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  margin-left: 20px;
  }
+ /* input */
 .add-element{
   margin-top: 20px;
+  text-align: center;
+  padding: 10px;
 }
 #add{
   width: 40%;
   padding: 8px;
   border-radius: 10px;
+  margin-right: 10px;
 }
 #add:focus{
   outline: none;
 }
 #btn{
-  padding: 5px;
+  padding: 8px 10px;
   border: none;
   border-radius: 5px;
   background-color: orange;

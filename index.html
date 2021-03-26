@@ -13,17 +13,17 @@
   <body>
     <div class="title">
       <h1>La tua lista della spesa</h1>
+      <img src="img/carrello.png" alt="carrello" class="spesa-img">
     </div>
     <div id="todo-list">
-      <ul>
+      <ul v-if="listaSpesa.length > 0">
         <li v-for="(item, index) in listaSpesa">{{item}} <span @click="deleteElement(index)">X</span></li>
       </ul>
       <div class="add-element">
         <input type="text" placeholder="Inserisci un nuovo elemento alla lista" id="add" v-model="newElement">
-        <button id="btn" @click="addElement">Aggiungi</button>
+        <button id="btn" @click="addElement" @keyup.13="addElement">Aggiungi</button>
       </div>
     </div>
-
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
