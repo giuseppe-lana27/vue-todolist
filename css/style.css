@@ -14,5 +14,26 @@
   font-size: 25px;
 }
  ul li{
-   margin: 10px 10px;
+  margin: 10px 10px;
+  padding: 20px;
  }
+ span{
+   cursor: pointer;
+ }
+.add-element{
+  margin-top: 20px;
+}
+#add{
+  width: 40%;
+  padding: 8px;
+  border-radius: 10px;
+}
+#add:focus{
+  outline: none;
+}
+#btn{
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+}

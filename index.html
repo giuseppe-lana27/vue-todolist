@@ -16,8 +16,12 @@
     </div>
     <div id="todo-list">
       <ul>
-        <li v-for="item in listaSpesa">{{item}} <span @click="deleteElement(elementIndex)">X</span></li>
+        <li v-for="(item, index) in listaSpesa">{{item}} <span @click="deleteElement(index)">X</span></li>
       </ul>
+      <div class="add-element">
+        <input type="text" placeholder="Inserisci un nuovo elemento alla lista" id="add" v-model="newElement">
+        <button id="btn" @click="addElement">Aggiungi</button>
+      </div>
     </div>
 
     <script src="js/script.js" charset="utf-8"></script>
