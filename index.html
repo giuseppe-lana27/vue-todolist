@@ -11,11 +11,15 @@
     <title>Todo List</title>
   </head>
   <body>
+    <div class="title">
+      <h1>La tua lista della spesa</h1>
+    </div>
     <div id="todo-list">
       <ul>
-        <li><span>X</span></li>
+        <li v-for="item in listaSpesa">{{item}} <span @click="deleteElement(elementIndex)">X</span></li>
       </ul>
     </div>
+
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
